@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Form</title>
+
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Contact Form</h1>
+			<form onsubmit="return submitForm()">
+				<label class="text-input">
+					<input type="text" name="firstName" required />
+					<span class="placeholder">First Name</span>
+				</label>
+				<label class="text-input">
+					<input type="text" name="lastName" required />
+					<span class="placeholder">Last Name</span>
+				</label>
+				<label class="text-input">
+					<input type="email" name="email" required />
+					<span class="placeholder">Email</span>
+				</label>
+
+				<label class="text-input">
+					<select name="gender" id="">
+						<option value="Male">Front End</option>
+						<option value="Female">Back End</option>
+						<option value="Others">Full Stack Programming</option>
+					</select>
+					<span class="placeholder">Service Type</span>
+				</label>
+
+				<button type="submit">Send Inquiry</button>
+			</form>
+
+			<span id="submit"></span>
+		</div>
+
+		<script src="js/script.js" />
+	</body>
+</html>
