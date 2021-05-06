@@ -3,18 +3,16 @@ header {
 	align-items: center;
 	justify-content: space-between;
 
-	padding-left: 12rem;
-	padding-right: 12rem;
+	padding-left: 17rem;
+	padding-right: 17rem;
 
-	font-size: 0.8rem;
-
+	font-size: 15px;
+	color: #393536;
 	@media (max-width: 70rem) {
 		padding-left: 3rem;
 		padding-right: 3rem;
 	}
 
-	div {
-	}
 	nav {
 		display: flex;
 		align-items: center;
@@ -28,8 +26,8 @@ header {
 		.nav {
       padding-left: 1rem;
       padding-right: 1rem;
-			padding-top: 1.1rem;
-			padding-bottom: 1.1rem;
+			padding-top: 1.4rem;
+			padding-bottom: 1.4rem;
 			&:hover {
 				cursor: pointer;
 				background-color: #ccd8e1;
@@ -38,13 +36,15 @@ header {
 	}
 
 	button {
+		
 		background-color: #c2195b;
 		padding: 5.75px 13.5px;
 		width: 137px;
-		height: 35.5px;
+		height: 43px;
 		color: white;
 		font-size: 1rem;
 		border: none;
 		border-radius: 20px;
+		font-weight: 600;
 	}
 }
