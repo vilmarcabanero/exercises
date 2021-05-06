@@ -1,0 +1,43 @@
+#pre-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+
+  @media (max-width: 70rem) {
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+  color: white;
+  background-color: #002540;
+
+  padding-top: 2;
+  > div {
+    
+    width: 340px;
+    height: 240px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-family: serif;
+    padding-top: 2rem;
+  }
+
+  p {
+    font-size: 15px;
+    margin: 3px;
+    padding: 2px;
+  }
+
+  button {
+    color: #002540;
+    width: 120px;
+    height: 28px;
+    border: none;
+    border-radius: 20px;
+  }
+}

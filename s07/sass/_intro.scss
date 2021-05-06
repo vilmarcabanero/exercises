@@ -1,0 +1,45 @@
+.intro {
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  justify-content: center;
+
+  h2, h1 {
+    color: #393536;
+  }
+
+  h1 {
+    font-family: serif;
+    margin-top: 4rem;
+  }
+	> div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+    img {
+      width: 138px;
+      height: 80px;
+      margin-right: 2rem;
+    }
+
+    div {
+      width: 710px;
+      height: 122px;
+    }
+	}
+
+	button {
+		background-color: #336589;
+		padding: 5.75px 13.5px;
+		width: 137px;
+		height: 35.5px;
+		color: white;
+		font-size: 1rem;
+		border: none;
+		border-radius: 20px;
+    margin-top: 2rem;
+	}
+}

@@ -1,0 +1,27 @@
+footer {
+  color: #393536;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.9rem;
+
+  div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  span {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  a {
+    color: #393536;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
