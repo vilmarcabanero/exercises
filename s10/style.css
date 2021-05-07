@@ -7,12 +7,9 @@ body {
 	box-sizing: border-box;
 }
 
-.my-container {
-	width: 30rem;
-}
-
-.profile,
+/* .profile,
 .projects {
+	width: 30rem;
 	background-color: rgba(0, 0, 0, 0.5);
 	box-shadow: 5px 5px 10px gray;
 	padding: 3rem;
@@ -20,15 +17,24 @@ body {
 	margin-bottom: 2rem;
 }
 
-.project-item {
-	background-color: rgba(0, 0, 0, 0.5);
+ */
+
+.img-container {
+	background-color: rgba(0, 0, 0, 0.3);
 	box-shadow: 5px 5px 10px gray;
-	padding: 1rem;
+	padding: 2rem;
 	border-radius: 5px;
-	margin-bottom: 1rem;
+	margin: 2rem;
 }
 
-.profile img {
+img {
 	background-color: rgba(0, 0, 0, 0.5);
 	box-shadow: 5px 5px 10px gray;
+	border-radius: 50%;
+}
+
+img:nth-child(4),
+img:nth-child(6),
+img:nth-child(10) {
+	background-color: rgba(255, 255, 255, 1);
 }
