@@ -1,0 +1,130 @@
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 300px;
+	z-index: 9997;
+	transition: all ease-in-out 0.5s;
+	transition: all 0.5s;
+	padding: 0 15px;
+	background: #040b14;
+	overflow-y: auto;
+
+	box-shadow: 3px 3px 6px gray;
+
+	//If mag start na to tablet, itago ang header.
+	@media (max-width: 991px) {
+		//xl 1199px, 991 lg
+		left: -330px;
+	}
+
+	.profile {
+		img {
+			width: 150px;
+			height: 150px;
+			margin: 15px auto;
+			margin-top: 3rem;
+			display: block;
+			box-shadow: 5px 5px 10px gray;
+		}
+
+		h1 {
+			font-size: 1.5rem;
+			font-weight: 600;
+			color: white;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+
+			a {
+				text-decoration: none;
+				color: white;
+			}
+		}
+
+		.social-links {
+			a {
+				font-size: 1.1rem;
+				color: white;
+				display: inline-block;
+				background: #212431;
+				box-shadow: 2px 2px 4px gray;
+				line-height: 1;
+				padding: 8px 0;
+				margin-right: 4px;
+				border-radius: 50%;
+				text-align: center;
+				width: 36px;
+				height: 36px;
+				transition: 0.3s;
+
+				&:hover {
+					background: #149ddd;
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.nav-menu {
+		padding-left: 2rem;
+
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			color: white;
+		}
+
+		a {
+			text-decoration: none;
+
+			padding: 12px 0;
+
+			&:hover {
+				span {
+					color: white;
+				}
+				i {
+					color: #149ddd;
+				}
+			}
+		}
+
+		.active {
+			span {
+				color: white;
+			}
+
+			i {
+				color: #149ddd;
+			}
+		}
+
+		i {
+			font-size: 1.5rem;
+			color: rgba(255, 255, 255, 0.85);
+			width: 30px;
+			height: 30px;
+			margin: 0px -8px;
+		}
+
+		.fa-home,
+		.fa-user {
+			font-size: 1.8rem;
+			margin-top: -0.2rem;
+		}
+
+		span {
+			font-size: 1rem;
+			padding-left: 8px;
+			color: rgba(255, 255, 255, 0.6);
+
+			&:hover {
+				color: white;
+			}
+		}
+	}
+}

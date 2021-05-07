@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+p, span {
+  font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+
+  #main {
+    margin-left: 0;
+  }
+}
+.banner {
+  /* ---- particles.js container ---- */
+  /* ---- particles.js container ---- */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 9997;
+  transition: all ease-in-out 0.5s;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: #040b14;
+  overflow-y: auto;
+  box-shadow: 3px 3px 6px gray;
+}
+@media (max-width: 991px) {
+  header {
+    left: -330px;
+  }
+}
+header .profile img {
+  width: 150px;
+  height: 150px;
+  margin: 15px auto;
+  margin-top: 3rem;
+  display: block;
+  box-shadow: 5px 5px 10px gray;
+}
+header .profile h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+header .profile h1 a {
+  text-decoration: none;
+  color: white;
+}
+header .profile .social-links a {
+  font-size: 1.1rem;
+  color: white;
+  display: inline-block;
+  background: #212431;
+  box-shadow: 2px 2px 4px gray;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+header .profile .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+header .nav-menu {
+  padding-left: 2rem;
+}
+header .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: white;
+}
+header .nav-menu a {
+  text-decoration: none;
+  padding: 12px 0;
+}
+header .nav-menu a:hover span {
+  color: white;
+}
+header .nav-menu a:hover i {
+  color: #149ddd;
+}
+header .nav-menu .active span {
+  color: white;
+}
+header .nav-menu .active i {
+  color: #149ddd;
+}
+header .nav-menu i {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.85);
+  width: 30px;
+  height: 30px;
+  margin: 0px -8px;
+}
+header .nav-menu .fa-home,
+header .nav-menu .fa-user {
+  font-size: 1.8rem;
+  margin-top: -0.2rem;
+}
+header .nav-menu span {
+  font-size: 1rem;
+  padding-left: 8px;
+  color: rgba(255, 255, 255, 0.6);
+}
+header .nav-menu span:hover {
+  color: white;
+}
+
+.nav-menu-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 9997;
+  background: #040b14;
+  margin: 0;
+  padding: 0;
+  box-shadow: 3px -3px 6px gray;
+}
+.nav-menu-bottom a {
+  text-decoration: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.2rem;
+  padding: 0.75rem 1.5rem 0.45rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .nav-menu-bottom a {
+    flex-direction: column;
+    padding: 0.5rem 0.2rem 0.2rem 0.2rem;
+  }
+  .nav-menu-bottom a span {
+    font-size: 0.825rem;
+    padding-right: 0.3rem;
+  }
+}
+.nav-menu-bottom a:hover span {
+  color: white;
+}
+.nav-menu-bottom a:hover i {
+  color: #149ddd;
+}
+.nav-menu-bottom .active span {
+  color: white;
+}
+.nav-menu-bottom .active i {
+  color: #149ddd;
+}
+.nav-menu-bottom i {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.85);
+  width: 30px;
+  height: 30px;
+  padding-right: 1rem;
+}
+.nav-menu-bottom .fa-home,
+.nav-menu-bottom .fa-user {
+  font-size: 1.8rem;
+}
+.nav-menu-bottom span {
+  margin: 0;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.nav-menu-bottom span:hover {
+  color: white;
+}
+
+#main {
+  margin-left: 300px;
+  width: 100%;
+  height: 100vh;
+}
+#main h1 {
+  margin: 0;
+}
+@media (max-width: 991px) {
+  #main {
+    margin-left: 0;
+  }
+}
+
+.banner {
+  /* ---- particles.js container ---- */
+  /* ---- particles.js container ---- */
+}
+
+/*# sourceMappingURL=style.css.map */
