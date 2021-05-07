@@ -1,0 +1,30 @@
+body {
+	background-color: #383838;
+	font-family: sans-serif;
+	color: white;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.profile,
+.projects {
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 10px gray;
+	padding: 3rem;
+	border-radius: 5px;
+	margin-bottom: 2rem;
+}
+
+.project-item {
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 10px gray;
+	padding: 1rem;
+	border-radius: 5px;
+	margin-bottom: 1rem;
+}
+
+.profile img {
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 10px gray;
+}
