@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --navHeight: 70px;
+  --sage: green;
+  --paleSpringBud: #DEDABA;
+  --goldCrayola: #E5C687;
+  --richBlackForeground: #0F1A20;
+  --white: #f8f8f8;
+  --black: #222;
+  --msuGreen: #2D4739;
+  --gray: #eee;
+  --btnHover: #06f;
+  --containerColorGray: rgba(0, 0, 0, 0.5);
+  --puti: #fff;
+}
+
+.light-theme {
+  --themeDropDownBg: var(--goldCrayola);
+  --themeIconBorderColor: var(--sage);
+  --navBg: var(--sage);
+  --navLinkHoverBg: var(--paleSpringBud);
+  --mainBg: white;
+  --fontColor: var(--black);
+  --btnColorHover: var(--btnHover);
+  --containerColor: var(--white);
+  --boxShadowColor: var(--gray);
+}
+
+.dark-theme {
+  --themeDropDownBg: var(--msuGreen);
+  --themeIconBorderColor: var(--richBlackForeground);
+  --navBg: var(--richBlackForeground);
+  --navLinkHoverBg: var(--msuGreen);
+  --mainBg: #343434;
+  --fontColor: var(--white);
+  --btnColorHover: var(--white);
+  --containerColor: var(--containerColorGray);
+  --boxShadowColor: var(--puti);
+}
+
+* {
+  color: var(--fontColor);
+}
+
+button:hover {
+  color: var(--btnColorHover);
+}
+
+.container {
+  background-color: var(--containerColor);
+  box-shadow: 5px 5px 10px var(--boxShadowColor);
+}
+
+.message-container {
+  background-color: var(--containerColor);
+  box-shadow: 5px 5px 10px var(--boxShadowColor);
+}
+
+.placeholder {
+  color: var(--fontColor);
+}
+
+body {
+  background: var(--mainBg);
+}
+
+* {
+  transition: background-color 0.6s ease, color 1s ease;
+}
+
+.light-theme {
+  --themeSwitchColor: var(--sage);
+}
+
+.dark-theme {
+  --themeSwitchColor: var(--msuGreen);
+}
+
+.slider {
+  background-color: var(--themeSwitchColor);
+}
+
+.container {
+  width: 25rem;
+  padding: 1rem;
+  margin: auto;
+  margin-top: 4rem;
+  border-radius: 5px;
+}
+
+.message-container {
+  width: 25rem;
+  padding: 1rem;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.button {
+  height: 2.75rem;
+  color: white;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  background-color: #06f;
+  border: 1px solid #06f;
+  border-radius: 0.2rem;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.input-group {
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+}
+.input-group:hover {
+  cursor: text;
+}
+
+input {
+  border-radius: 5px;
+  font-size: 0.8rem;
+  width: 22rem;
+  border-bottom: 1px solid gainsboro;
+  height: 2rem;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+input::-ms-reveal, input::-ms-clear {
+  display: none;
+}
+input:valid + .placeholder, input:focus + .placeholder {
+  top: -4px;
+  font-size: 0.75rem;
+}
+
+.placeholder {
+  font-size: 0.9rem;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+  transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+  cursor: text;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+#change-theme-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 7rem;
+  margin: 0.25rem;
+  font-size: 0.85rem;
+  padding: 0.25rem;
+  height: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
