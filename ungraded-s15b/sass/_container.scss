@@ -1,0 +1,76 @@
+.container {
+	width: 25rem;
+	padding: 1rem;
+	margin: auto;
+	margin-top: 4rem;
+	border-radius: 5px;
+}
+
+.message-container {
+	width: 25rem;
+	padding: 1rem;
+	margin: auto;
+	margin-top: 1rem;
+	border-radius: 5px;
+}
+
+
+.button {
+	height: 2.75rem;
+	color: white;
+	width: 100%;
+	margin-top: 1rem;
+	margin-bottom: 3rem;
+	font-size: 1.2rem;
+	background-color: #06f;
+	border: 1px solid #06f;
+	border-radius: 0.2rem;
+	&:hover {
+		cursor: pointer;
+		background-color: transparent;
+	}
+}
+
+.input-group {
+	position: relative;
+	padding: 1rem;
+	width: 100%;
+	&:hover {
+		cursor: text;
+	}
+}
+
+input {
+	border-radius: 5px;
+	font-size: 0.8rem;
+	width: 22rem;
+	border-bottom: 1px solid gainsboro;
+	height: 2rem;
+	padding-left: 0.5rem;
+	margin-bottom: 1rem;
+	background-color: transparent;
+	outline: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+
+	&::-ms-reveal,
+	&::-ms-clear {
+		display: none;
+	}
+
+	&:valid + .placeholder,
+	&:focus + .placeholder {
+		top: -4px;
+		font-size: 0.75rem;
+	}
+}
+
+.placeholder {
+	font-size: 0.9rem;
+	position: absolute;
+	left: 1.5rem;
+	top: 1.5rem;
+	transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+	cursor: text;
+}
