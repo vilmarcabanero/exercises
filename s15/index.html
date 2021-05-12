@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Javascript Selection Control Structures</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body class="light-theme">
+		<button id="change-theme-button" class="switch button">Change theme</button>
+		<main>
+			<div class="container">
+				<h2>Please fill in your information: </h2>
+				<form name="form">
+					<label class="input-group">
+						<input type="TEXT" name="firstname" required />
+						<span class="placeholder">First Name:</span>
+					</label>
+					<label class="input-group">
+						<input type="TEXT" name="lastname" required />
+						<span class="placeholder">Last Name:</span>
+					</label>
+					<label class="input-group">
+						<input type="TEXT" name="email" required />
+						<span class="placeholder">Email Address:</span>
+					</label>
+					<label class="input-group">
+						<input type="password" name="password" required />
+						<span class="placeholder">Password:</span>
+					</label>
+					<label class="input-group">
+						<input type="password" name="confirmpassword" required />
+						<span class="placeholder">Confirm password:</span>
+					</label>
+					<button
+						type="BUTTON"
+						class="button"
+						value="Display"
+						onClick="getInfo()"
+					>
+						Send
+					</button>
+					<center>
+						<p id="message"></p>
+					</center>
+				</form>
+			</div>
+		</main>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>
