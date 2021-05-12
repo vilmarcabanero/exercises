@@ -181,6 +181,7 @@ h2 {
 }
 
 #message {
+  transition: all 0.7s ease;
   border-radius: 5px;
 }
 
