@@ -5,7 +5,7 @@ themeSwitch.addEventListener('click', () => {
 	document.body.classList.toggle('dark-theme')
 })
 
-const students = [
+let students = [
 	'Vil',
 	'Rica',
 	'Mark',
@@ -17,6 +17,8 @@ const students = [
 	'Ian',
 ]
 
+let currentStudents = students
+
 const addStudent = () => {
 	let name = document.form.student.value
 	students.push(name)
@@ -25,6 +27,15 @@ const addStudent = () => {
 	msg.style.padding = '0.5rem'
 	msg.innerHTML = `${students[students.length - 1]} is added.`
 	divMsg.appendChild(msg)
+
+	
+
+	currentStudents = students.join(', ')
+	console.log(`Current list of students: <br> ${currentStudents}`)
+	let studentMsg = document.createElement('center')
+	studentMsg.style.padding = '0.5rem'
+	studentMsg.innerHTML = `Current list of students: <br> ${currentStudents}`
+	divMsg.appendChild(studentMsg)
 }
 
 const deleteStudent = () => {
@@ -36,6 +47,12 @@ const deleteStudent = () => {
 	divMsg.appendChild(msg)
 
 	students.pop()
+	currentStudents = students.join(', ')
+	console.log(`Current list of students: <br> ${currentStudents}`)
+	let studentMsg = document.createElement('center')
+	studentMsg.style.padding = '0.5rem'
+	studentMsg.innerHTML = `Current list of students: <br> ${currentStudents}`
+	divMsg.appendChild(studentMsg)
 }
 
 const countStudent = () => {
@@ -44,4 +61,11 @@ const countStudent = () => {
 	msg.style.padding = '0.5rem'
 	msg.innerHTML = `There are ${students.length} students in the class.`
 	divMsg.appendChild(msg)
+
+	currentStudents = students.join(', ')
+	console.log(`Current list of students: <br> ${currentStudents}`)
+	let studentMsg = document.createElement('center')
+	studentMsg.style.padding = '0.5rem'
+	studentMsg.innerHTML = `Current list of students: <br> ${currentStudents}`
+	divMsg.appendChild(studentMsg)
 }
