@@ -1,0 +1,87 @@
+@import 'variables';
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navHeight: 70px;
+  --sage: green;
+  --paleSpringBud: #DEDABA;
+  --goldCrayola: #E5C687;
+  --richBlackForeground: #0F1A20;
+  --white: #f8f8f8;
+  --black: #222;
+  --msuGreen: #2D4739;
+  --gray: #eee;
+  --btnHover: #06f;
+  --containerColorGray: rgba(0, 0, 0, 0.5);
+  --puti: #fff;
+  
+}
+
+.light-theme {
+  --themeDropDownBg: var(--goldCrayola);
+  --themeIconBorderColor: var(--sage);
+  --navBg: var(--sage);
+  --navLinkHoverBg: var(--paleSpringBud);
+  --mainBg: white;
+  --fontColor: var(--black);
+  --btnColorHover: var(--btnHover); 
+  --containerColor: var(--white);
+  --boxShadowColor: var(--gray);
+}
+
+.dark-theme {
+  --themeDropDownBg: var(--msuGreen);
+  --themeIconBorderColor: var(--richBlackForeground);
+  --navBg: var(--richBlackForeground);
+  --navLinkHoverBg: var(--msuGreen);
+  --mainBg: #343434;
+  --fontColor: var(--white);
+  --btnColorHover: var(--white); 
+  --containerColor: var(--containerColorGray);
+  --boxShadowColor: var(--puti);
+}
+
+* {
+  color: var(--fontColor);
+}
+
+button:hover {
+  color: var(--btnColorHover);
+}
+
+.container {
+  background-color: var(--containerColor);
+  box-shadow: 5px 5px 10px var(--boxShadowColor);
+}
+
+.message-container {
+  background-color: var(--containerColor);
+  box-shadow: 5px 5px 10px var(--boxShadowColor);
+}
+
+.placeholder {
+  color: var(--fontColor);
+}
+
+body {
+  background: var(--mainBg);
+}
+
+* {
+  transition: background-color 0.6s ease, color 1s ease;
+}
+
+.light-theme {
+  --themeSwitchColor: var(--sage);
+}
+
+.dark-theme {
+  --themeSwitchColor: var(--msuGreen);
+}
+
+.slider {
+  background-color: var(--themeSwitchColor);
+}
