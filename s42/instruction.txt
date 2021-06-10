@@ -1,0 +1,14 @@
+Update the showFullName function to show the spanFullName text content with the value of the first and the last name input fields.
+
+Stretch goal
+
+Add a button called submit, once clicked, it will show an alert:
+
+If firstNameInput and lastNameInput is not empty, the message of the alert is 
+"Thank you for registering, <firstName> <lastName>."
+
+then clear out the value of both inputs.
+
+Else, show a message on the Alert:
+
+"Please input a first or last name."
