@@ -17,10 +17,16 @@
 		<title>JavasScript - Reactive DOM with JSON</title>
 	</head>
 	<body>
-		<div class="alert alert-primary text-center fixed-top" id="alert" role="alert"></div>
-		
+		<div
+			class="alert alert-primary text-center fixed-top"
+			id="alert"
+			role="alert"
+		></div>
+		<div id='tobedeleted'></div>
+
 		<div class="container mt-5">
-			
+			<br />
+
 			<div class="row">
 				<div class="col-12 col-sm-12 col-lg-5 col-md-7">
 					<div class="card p-4">
@@ -86,11 +92,28 @@
 						</div>
 					</div>
 					<br />
+					<div class="card p-3">
+						<div class="body">
+							<div class="row">
+								<div class="col">
+									<button id="delete-all-btn" class="btn btn-primary w-100">
+										Delete all
+									</button>
+								</div>
+								<div class="col">
+									<button id="delete-last-btn" class="btn btn-primary w-100">
+										Delete last
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br />
 				</div>
 				<div class="col">
 					<div class="card p-3">
 						<div class="body">
-							<h1 id='posts'>Posts</h1>
+							<h1 id="posts">Posts</h1>
 							<div id="div-post-entries"></div>
 						</div>
 					</div>

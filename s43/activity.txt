@@ -1,0 +1,17 @@
+Add a new button called delete all
+this button will be able to delete all the posts.
+
+This button's function is triggered when the button is clicked.
+
+_________________
+
+Add a new button called delete last, this button will be able to delete the last post made. This button's function is triggered when the button is clicked.
+
+Both button should be able to show the posts once the item/items have been deleted.
+_________________
+
+Stretch goal
+
+Using the delete button per post, delete the particular post. You may use filter() .
+
+Note: Research the .remove() method for JS DOM. 
